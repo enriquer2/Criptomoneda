@@ -7,6 +7,13 @@ class Body extends Component {
   render() {
     return (
       <div>
+        <div>
+          <p>Daily Prices and Volumes for Digital Currency</p>
+          <span />
+          <p>Market Code: USD</p>
+          <span />
+          <p>Market Name: United States Dollar</p>
+        </div>
         <General_info name="2018-11-22" />
         <Coin />
         <Api_call />
