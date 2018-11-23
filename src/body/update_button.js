@@ -12,7 +12,7 @@ class Update_button extends Component {
   }
   click(e) {
     this.setState({
-      greeting: 'Updating data'
+      greeting: 'Updating data...'
     });
   }
   render() {

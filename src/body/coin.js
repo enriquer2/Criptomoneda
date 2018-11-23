@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import database from '../data/data.json'
+import database from '../data/data.json';
 
 class Coin extends Component {
   constructor(props){
