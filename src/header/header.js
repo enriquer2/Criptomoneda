@@ -4,7 +4,7 @@ class Header extends Component {
   constructor(props){
     super(props);
 
-    let firstName = this.props.name.split(" ")[0];
+    let firstName = this.props.name;
 
     this.state = {
       name: firstName
