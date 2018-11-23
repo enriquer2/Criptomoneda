@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Header from './header/header';
+import Body from './body/body';
+import Footer from './footer/footer';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
+ReactDOM.render(<Header name="Finametrix Company" />, document.getElementById('header'));
+ReactDOM.render(<Body />, document.getElementById('body'));
+ReactDOM.render(<Footer name={ 'Enrique Cases' } />, document.getElementById('footer'));
 serviceWorker.unregister();
