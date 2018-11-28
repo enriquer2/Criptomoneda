@@ -2,10 +2,11 @@ import React, { Component } from 'react';
 import Load_info from './load_info';
 
 function ShowMessage(props) {
+  const dbName = props.name;
   return (
     <div>
-      <h3>History</h3>
-      <Load_info />
+      <h3>{dbName} History</h3>
+      <Load_info name={dbName}/>
     </div>
   )
 }
@@ -16,10 +17,11 @@ function HideMessage(props) {
 
 function Message(props) {
   const isShown = props.isShown;
+  const dbName = props.name;
   if (isShown) {
     return (
       <div>
-        <ShowMessage />
+        <ShowMessage name={dbName}/>
       </div>
     )
   }

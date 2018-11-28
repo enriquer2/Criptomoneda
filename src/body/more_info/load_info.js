@@ -4,10 +4,16 @@ class Load_info extends Component {
   constructor(props){
     super(props);
 
+    let dbName = this.props.name;
+
+    this.state = {
+      dbName: dbName
+    }
+
   }
   render() {
     return (
-      <h3>Info</h3>
+      <h3>{this.state.dbName} Info</h3>
     );
   }
 }
