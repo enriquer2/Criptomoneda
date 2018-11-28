@@ -5,7 +5,7 @@ import Load_info from './load_info';
 function ShowMessage(props) {
   const dbName = props.name;
   return (
-    <div class="message">
+    <div>
       <h5>{dbName} History</h5>
       <Load_info name={dbName}/>
     </div>
@@ -21,7 +21,7 @@ function Message(props) {
   const dbName = props.name;
   if (isShown) {
     return (
-      <div>
+      <div class="message">
         <ShowMessage name={dbName}/>
       </div>
     )
