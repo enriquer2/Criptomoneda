@@ -16,7 +16,6 @@ class Api_call extends Component {
   render() {
     return (
       <div>
-        <h3>To update data values</h3>
         <Update_button />
       </div>
     );
