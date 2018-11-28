@@ -12,7 +12,7 @@ class General_info extends Component {
   }
   render() {
     return (
-      <h3>Last Refreshed, {this.state.name} (end of day)</h3>
+      <h4>Last Refreshed: {this.state.name}</h4>
     );
   }
 }
