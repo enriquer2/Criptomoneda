@@ -7,7 +7,7 @@ import Body from './body/body';
 import Footer from './footer/footer';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<Header name="Finametrix Company" />, document.getElementById('header'));
+ReactDOM.render(<Header name="CRYPTOCURRENCY" />, document.getElementById('header'));
 ReactDOM.render(<Body />, document.getElementById('body'));
 ReactDOM.render(<Footer name={ 'Enrique Cases' } />, document.getElementById('footer'));
 serviceWorker.unregister();
