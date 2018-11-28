@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import './message.css';
 import Load_info from './load_info';
 
 function ShowMessage(props) {
   const dbName = props.name;
   return (
-    <div>
-      <h4>{dbName} History</h4>
+    <div class="message">
+      <h5>{dbName} History</h5>
       <Load_info name={dbName}/>
     </div>
   )
