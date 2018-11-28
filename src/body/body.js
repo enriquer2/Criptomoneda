@@ -14,7 +14,7 @@ class Body extends Component {
           <span />
           <p>Market Name: United States Dollar</p>
         </div>
-        <General_info name="2018-11-22" />
+        <General_info name="2018-11-28" />
         <Coin />
         <Api_call />
       </div>

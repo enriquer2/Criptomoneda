@@ -5,7 +5,7 @@ function ShowMessage(props) {
   const dbName = props.name;
   return (
     <div>
-      <h3>{dbName} History</h3>
+      <h4>{dbName} History</h4>
       <Load_info name={dbName}/>
     </div>
   )

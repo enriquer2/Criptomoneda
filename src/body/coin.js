@@ -15,8 +15,9 @@ class Coin extends Component {
             database.map(function(cripto){
               return (
                 <li>
-                  {cripto.name} - {cripto.symbol}
-                  <br />
+                  <h4>
+                    {cripto.name} - {cripto.symbol}
+                  </h4>
                   Volume: {cripto.volume} Market Cap: {cripto.market_cap}
                   <br />
                   Value:
