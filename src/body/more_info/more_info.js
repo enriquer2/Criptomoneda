@@ -10,8 +10,11 @@ class More_info extends Component {
     this.handleShowClick = this.handleShowClick.bind(this);
     this.handleHideClick = this.handleHideClick.bind(this);
 
+    let dbName = this.props.name;
+
     this.state = {
-      isShown: false
+      isShown: false,
+      dbName: dbName
     }
   }
 
@@ -25,6 +28,7 @@ class More_info extends Component {
 
   render() {
     const isShown = this.state.isShown;
+    const dbName = this.state.dbName;
     let button;
 
     if (isShown) {
@@ -36,7 +40,7 @@ class More_info extends Component {
     return (
       <div>
         {button}
-        <Message isShown={isShown} />
+        <Message isShown={isShown} name={dbName} />
       </div>
     );
   }
