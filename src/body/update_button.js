@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './update_button.css';
+import { FaSyncAlt } from 'react-icons/fa';
 
 class Update_button extends Component {
   constructor(props){
@@ -19,7 +20,7 @@ class Update_button extends Component {
   render() {
     return (
       <div>
-        <button onClick={this.click} class="update_button">Update </button>
+        <button onClick={this.click} class="update_button">Update <FaSyncAlt /></button>
         <p>{this.state.greeting}</p>
       </div>
     );
