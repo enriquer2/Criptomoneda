@@ -4,7 +4,7 @@ class Footer extends Component {
   render() {
     return (
       <div>
-        Project made by, {this.props.name}.
+        Project for FINAMETRIX, made by {this.props.name}.
       </div>
     );
   }
