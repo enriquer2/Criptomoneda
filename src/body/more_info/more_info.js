@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Message from './message';
 import Show_button from './show_button';
 import Hide_button from './hide_button';
 
@@ -10,7 +11,7 @@ class More_info extends Component {
     this.handleHideClick = this.handleHideClick.bind(this);
 
     this.state = {
-      isShown: false,
+      isShown: false
     }
   }
 
@@ -35,6 +36,7 @@ class More_info extends Component {
     return (
       <div>
         {button}
+        <Message isShown={isShown} />
       </div>
     );
   }
