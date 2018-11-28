@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import database from '../data/data.json';
+import More_info from './more_info/more_info';
 
 class Coin extends Component {
   constructor(props){
@@ -21,6 +22,9 @@ class Coin extends Component {
                   Value:
                   <div>
                     Open: {cripto.open} High: {cripto.high} Low: {cripto.low} Close: {cripto.close}
+                  </div>
+                  <div>
+                    <More_info name={cripto.symbol}/>
                   </div>
                   <br></br>
                 </li>
