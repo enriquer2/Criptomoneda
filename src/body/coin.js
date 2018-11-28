@@ -30,7 +30,7 @@ class Coin extends Component {
                   <div class="row">
                     Last values:
                   </div>
-                  <div class="values">
+                  <div class="coin_info_values">
                     <div class="row">
                       <strong>Open</strong>: {cripto.open}
                     </div>
@@ -48,7 +48,6 @@ class Coin extends Component {
                     <More_info name={cripto.symbol}/>
                   </div>
                 </div>
-                <br></br>
               </ul>
             )
           })
